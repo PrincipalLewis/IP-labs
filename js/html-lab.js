@@ -1,10 +1,15 @@
 //var bootstrap = require('bootstrap.js');
 
 
-$('#open-html-labs').click(function () {
-    $('#main').load('html-lab/main.html');
-});
 
-$('#html-lab1').click(function () {
-    $('#main').load('html-lab/Ex1.html');
-});
+function loadExample(id) {
+    $('#main').load('html-lab/Ex' + id + '.html');
+    console.log('!!!!!!!!!!!!!!!!!!!!');
+    var main = document.getElementById('main');
+    main.innerHTML += '<p >Задание' + id + '</p>';
+}
+
+
+function openMainHtmlLab() {
+    $('#main').load('html-lab/main.html');
+}
