@@ -8,14 +8,14 @@ switchImg(0);
 
 function switchImg () {
     setTimeout(function () {
-        image('../img/img1.gif');
+        image('../img/3.gif');
         switchImg2();
     }, 1000);
 }
 
 function switchImg2 () {
     setTimeout(function () {
-        image('../img/img2.gif');
+        image('../img/4.gif');
         switchImg();
     }, 1000);
 }

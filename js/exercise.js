@@ -31,7 +31,11 @@ function task2() {
         this.style.transform='rotate(0)';
     });
 }
+function task3() {
+    var random = Math.floor( Math.random() * (9 - 1) + 1);
+    document.getElementById("main").innerHTML = '<img id="img" src="img/taskImg/' + random + '.jpg" width=200 height=200>';
+}
 
 $('#js-lab1').click(function () {
-    task2();
+    task3();
 });
